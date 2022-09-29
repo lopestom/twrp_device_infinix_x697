@@ -16,7 +16,6 @@
 #
 
 # Allow building with minimal manifest
-
 ALLOW_MISSING_DEPENDENCIES := true
 
 DEVICE_PATH := device/infinix/x697
