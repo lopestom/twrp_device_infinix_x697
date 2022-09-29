@@ -20,7 +20,7 @@
 #
 
 
-FDEVICE="x695c"
+FDEVICE="x697"
 #set -o xtrace
 
 fox_get_target_device() {
