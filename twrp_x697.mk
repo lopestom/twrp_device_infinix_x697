@@ -35,9 +35,3 @@ PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Note 11 Pro
 PRODUCT_MANUFACTURER := Infinix
 PRODUCT_RELEASE_NAME := Infinix Note 11 Pro
-
-# HACK: Set vendor patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.security_patch=2099-12-31 \
-    ro.bootimage.build.date.utc=0 \
-    ro.build.date.utc=0
