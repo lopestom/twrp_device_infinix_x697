@@ -50,15 +50,17 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.security_patch=2099-12-31
+    ro.vendor.build.security_patch=2099-12-31 \
+    ro.bootimage.build.date.utc=0 \
+    ro.build.date.utc=0
 
 # Health Hal
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service \
     libhealthd.$(PRODUCT_PLATFORM)
-
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
@@ -79,7 +81,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
-
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
