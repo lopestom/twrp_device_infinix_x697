@@ -17,3 +17,8 @@
 
 PRODUCT_MAKEFILES := \
      $(LOCAL_DIR)/twrp_x697.mk
+
+COMMON_LUNCH_CHOICES := \
+    twrp_x697-userdebug \
+    twrp_x697-user \
+    twrp_x697-eng
