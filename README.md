@@ -11,7 +11,8 @@ Some tests was made: Enc_Dec working. Removed one file with 1.36MB because not n
 Issue: unlocking screen not work - Hide TW_SCREEN_BLANK_ON_BOOT: Maybe this cause touch screen issue when unlocking screen.
 
 This branch android-11 has ***encrypt/decrypt*** files and option to more test with that.
-2022-10-12: Changes to made new version TWRP3.7.0
+
+****2022-10-12****: Changes to made new version TWRP3.7.0
 
 ## Building
 
