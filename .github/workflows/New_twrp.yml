@@ -75,7 +75,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TEST }}
          with:
           tag_name: Infinix_Note_11_Pro
-          name: TWRP36x_11
+          name: TWRP37x_11
           files: | 
             twrp/out/target/product/x697/boot*.img
             twrp/out/target/product/x697/ramdisk*.img
