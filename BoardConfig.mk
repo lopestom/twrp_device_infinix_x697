@@ -15,10 +15,11 @@
 # limitations under the License.
 #
 
-# Allow building with minimal manifest
-ALLOW_MISSING_DEPENDENCIES := true
-
+# Device path
 DEVICE_PATH := device/infinix/x697
+
+# For building with minimal manifest
+ALLOW_MISSING_DEPENDENCIES := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -35,6 +36,8 @@ TARGET_2ND_CPU_VARIANT := cortex-a55
 
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+TARGET_IS_64_BIT := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := CY-X697-H812-A
@@ -148,6 +151,9 @@ TW_INCLUDE_REPACKTOOLS := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
+TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+TW_DEFAULT_LANGUAGE := ru
+TW_EXTRA_LANGUAGES := false
 
 # Device config
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
