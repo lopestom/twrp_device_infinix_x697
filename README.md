@@ -16,6 +16,8 @@ New file with new version TWRP3.7.0: Need test after 2022-10-12
 
 ### This branch android-11 has ***encrypt/decrypt*** files and option to more test with that.
 
+![TWRP Working](https://github.com/lopestom/twrp_device_infinix_x697/blob/android-11/picture/TWRP-IN_11_Pro-MT6871.png?raw=true)
+
 -----
 #### Building
 
