@@ -65,8 +65,9 @@ PRODUCT_PACKAGES += \
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-mtkimpl.recovery \
-    android.hardware.boot@1.1-mtkimpl
-
+    android.hardware.boot@1.1-mtkimpl \
+    android.hardware.boot@1.1-service
+    
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl
 
@@ -90,3 +91,5 @@ PRODUCT_PACKAGES += \
     update_verifier \
     update_engine_sideload
 
+TW_OVERRIDE_SYSTEM_PROPS := \
+    "ro.build.product;ro.build.fingerprint;ro.build.version.incremental;ro.product.device=ro.product.system.device;ro.product.model=ro.product.system.model;ro.product.name=ro.product.system.name"
