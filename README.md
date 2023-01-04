@@ -11,8 +11,10 @@ Some tests was made: Enc_Dec working. Removed one file with 1.36MB because not n
 Issue: unlocking screen not work - Hide TW_SCREEN_BLANK_ON_BOOT: Maybe this cause touch screen issue when unlocking screen.
 Since Simich07 wrote about this issues with touch after unlocking screen off, he make a discover disabling the screen timeout. So in the flags we need write:
 `TW_NO_SCREEN_TIMEOUT := true` and compiling other TWRP.img to new test.
+```
 # Try disabling the screen timeout. It is not a fix, but it can be an effective work-around.
 TW_NO_SCREEN_TIMEOUT := true
+```
 
 New file with new version TWRP3.7.0: Need test after 2022-10-12
 
